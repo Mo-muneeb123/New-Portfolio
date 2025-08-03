@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammed Muneeb - Software Engineer & CS Graduate. Full-stack development, cloud solutions, and AI expertise. Available for new grad roles.">
+    <meta name="keywords" content="Software Engineer, New Grad, Computer Science, Full Stack, Harman Samsung, Wayne State, JavaScript, Python, Angular, TypeScript">
+    <meta name="author" content="Mohammed Muneeb">
+    
+    <title>Mohammed Muneeb | Software Engineer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles-freedom-new.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="dark-mode">
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="terminal-loader">
+            <div class="loader-text">
+                <span>Loading portfolio...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="terminal-prompt">$</span>
+                <span class="brand-text">mo.muneeb</span>
+                <span class="cursor-blink">_</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link" data-section="home">
+                    <span class="nav-icon">></span>
+                    <span>home</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <span class="nav-icon">></span>
+                    <span>about</span>
+                </a>
+                <a href="#experience" class="nav-link" data-section="experience">
+                    <span class="nav-icon">></span>
+                    <span>experience</span>
+                </a>
+                <a href="#projects" class="nav-link" data-section="projects">
+                    <span class="nav-icon">></span>
+                    <span>projects</span>
+                </a>
+                <a href="#skills" class="nav-link" data-section="skills">
+                    <span class="nav-icon">></span>
+                    <span>skills</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <span class="nav-icon">></span>
+                    <span>contact</span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Animated background will be inserted here by JS -->
+        <div class="hero-content animate-fadeInUp">
+            <h1>Mohammed Muneeb</h1>
+            <h2>Software Engineer</h2>
+            <p>Beyond the pixels, a little bit about me.</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn-primary">About Me</a>
+                <a href="#experience" class="btn-secondary">Experience</a>
+                <a href="#projects" class="btn-secondary">Projects</a>
+                <a href="#contact" class="btn-secondary">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-box journey-box">
+                    <h3 style="font-family: 'Fredoka', 'Montserrat', 'Inter', sans-serif; font-weight: 700; font-size: 1.18em; letter-spacing: 0.5px;">Get to Know Me</h3>
+                    <div style="font-family: 'Fredoka', 'Montserrat', 'Inter', sans-serif; font-size: 0.98em; line-height: 1.65; color: var(--text-primary);">
+                        <span style="font-size: 1.05em;">✋ Hi, my name is Mohammed Muneeb and I am a Senior Computer Science and Mathematics student at Wayne State University. Nice to meet you!</span>
+                        <br><br>
+                        <span style="font-weight: 600; color: var(--accent);">👨‍💻 Professional Experience:</span><br>
+                        <span style=>- Software Engineering Intern @ HARMAN (Samsung)</span><br>
+                        <span style=>- Software Implementation Intern @ Henkel</span><br>
+                        <span style=>- Computer Science Instructor at Wayne State & theCoderSchool</span>
+                        <br><br>
+                        <span style="font-weight: 600; color: var(--accent);">🌐 Interests:</span><br>
+                        <span style=>I’m especially interested in frontend development, software engineering, cloud computing, and AI/ML. I’m currently expanding my skills in full-stack development and cross-platform architecture.</span>
+                        <br><br>
+                        <span style="font-weight: 600; color: var(--accent);">🏋️‍♂️ Outside of Tech:</span><br>
+                        <span style=>I like to workout, play pickleball and soccer, work on cars, go to car meets, and watch the Detroit Lions.</span>
+                        <br><br>
+                        <span style="font-weight: 600; color: var(--accent);">🤝 Let’s connect!</span><br>
+                        <span style=>I’m actively seeking new grad roles starting in 2026!</span>
+                    </div>
+                </div>
+                <div class="about-box education-box">
+                    <h3 style="font-family: 'Fredoka', 'Montserrat', 'Inter', sans-serif; font-weight: 700; font-size: 1.08em; letter-spacing: 0.5px;">Education</h3>
+                    <div style="font-family: 'Fredoka', 'Montserrat', 'Inter', sans-serif; font-size: 0.93em; line-height: 1.65; color: var(--text-primary); margin-bottom: 1em;">
+                        <strong style="font-size: 1em; color: var(--accent);">Wayne State University</strong> – Bachelor of Computer Science, Minor in Math
+                    </div>
+                    <div style="font-family: 'Fredoka', 'Montserrat', 'Inter', sans-serif; font-size: 0.93em; margin-bottom: 0.5em;">
+                        <strong>GPA:</strong> 3.90 / 4.00
+                    </div>
+                    <div style="font-family: 'Fredoka', 'Montserrat', 'Inter', sans-serif; font-size: 0.93em; margin-bottom: 0.5em;">
+                        <strong>Expected Graduation:</strong> May 2026
+                    </div>
+                    <div style="font-family: 'Fredoka', 'Montserrat', 'Inter', sans-serif; font-size: 0.93em; margin-bottom: 0.5em;">
+                        <strong>Courses:</strong><br>
+                        <span style="color: var(--text-secondary); font-size: 0.98em; font-family: 'JetBrains Mono', 'Montserrat', monospace;">
+                            Data Structures & Algorithms, Operating Systems, Software Engineering, Artificial Intelligence,<br>
+                            Database Systems, Algorithm Design & Analysis, Computer Architecture, Probability & Statistics, Matrix Algebra
+                        </span>
+                    </div>
+                    <div style="font-family: 'Fredoka', 'Montserrat', 'Inter', sans-serif; font-size: 0.93em; margin-bottom: 0.5em;">
+                        <strong>Extracurriculars:</strong><br>
+                        <span style="color: var(--text-secondary); font-size: 0.98em; font-family: 'JetBrains Mono', 'Montserrat', monospace;">
+                            AWS Club, MHacks, WayneHacks, Society of Computer Developers, Google Developer Club, Tech Cadets,<br>
+                            Local Volunteer Clubs, Rec Soccer
+                        </span>
+                    </div>
+                    <div style="font-family: 'Fredoka', 'Montserrat', 'Inter', sans-serif; font-size: 0.93em;">
+                        <strong>Awards:</strong>
+                        <ul style="color: var(--accent); font-size: 0.98em; font-family: 'JetBrains Mono', 'Montserrat', monospace; margin-top: 0.3em; margin-bottom: 0; list-style: none; padding-left: 0;">
+                            <li style="position: relative; padding-left: 1.2em; margin-bottom: 0.2em;"><span style="position: absolute; left: 0; top: 0.45em; width: 0.6em; height: 0.6em; background: var(--accent); border-radius: 50%; display: inline-block;"></span> 2x Ford Engineering Scholar (1 / 10 Global Recipients)</li>
+                            <li style="position: relative; padding-left: 1.2em; margin-bottom: 0.2em;"><span style="position: absolute; left: 0; top: 0.45em; width: 0.6em; height: 0.6em; background: var(--accent); border-radius: 50%; display: inline-block;"></span>Arthur Carr Scholar</li>
+                            <li style="position: relative; padding-left: 1.2em; margin-bottom: 0.2em;"><span style="position: absolute; left: 0; top: 0.45em; width: 0.6em; height: 0.6em; background: var(--accent); border-radius: 50%; display: inline-block;"></span>Detroit Leadership Award</li>
+                            <li style="position: relative; padding-left: 1.2em; margin-bottom: 0.2em;"><span style="position: absolute; left: 0; top: 0.45em; width: 0.6em; height: 0.6em; background: var(--accent); border-radius: 50%; display: inline-block;"></span>Dean's List (6x)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-end">};</div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="experience-content">
+                <div class="timeline">
+                    <div class="timeline-item active" data-company="harman">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="card-header">
+                                    <div class="company-info">
+                                        <h3>Software Engineer Intern</h3>
+                                        <h4>Harman International - A Samsung Company</h4>
+                                        <span class="duration">May 2025 - Present</span>
+                                    </div>
+                                    <div class="company-logo">
+                                        <i class="fas fa-industry"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Angular</span>
+                                        <span class="tech-tag">TypeScript</span>
+                                        <span class="tech-tag">C++</span>
+                                        <span class="tech-tag">Qt</span>
+                                        <span class="tech-tag">Jira</span>
+                                    </div>
+                                    <ul class="achievements">
+                                        <li>
+                                            <i class="fas fa-rocket"></i>
+                                            Developed and deployed dynamic UI components using Angular and TypeScript for JBL’s professional audio design
+                                            platform, reducing layout configuration time by 30% and improving designer workflow across platforms.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-cogs"></i>
+                                            Led full lifecycle development of the “Examples” module, integrating Qt, file system APIs, and Angular routing to
+                                            enable seamless save/load functionality and improve project management.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-sync-alt"></i>
+                                            Resolved 10+ software defects tracked in Jira, collaborating cross-functionally to debug, test, and ship reliable
+                                            features for over 10,000 users across Windows, Mac, and iOS.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-shield-alt"></i>
+                                            Modernized Angular codebase with ViewChild/Children, boosting performance and enhancing maintainability.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-code-branch"></i>
+                                            Used Git, Bitbucket, and Jira for version control, pull requests, and Agile sprint planning.
+                                        </li>
+                                    </ul>
+                                    <div class="impact-metrics">
+                                        <div class="metric">
+                                            <span class="metric-number">30%</span>
+                                            <span class="metric-label">Faster Layouts</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-number">10,000+</span>
+                                            <span class="metric-label">Users Impacted</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-number">10+</span>
+                                            <span class="metric-label">Defects Resolved</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-company="wayne">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="card-header">
+                                    <div class="company-info">
+                                        <h3>Software Implementation Intern</h3>
+                                        <h4>Henkel</h4>
+                                        <span class="duration">Mar 2024 - Sep 2024</span>
+                                    </div>
+                                    <div class="company-logo">
+                                        <i class="fas fa-industry"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Rest APIs</span>
+                                        <span class="tech-tag">XML</span>
+                                        <span class="tech-tag">Salesforce</span>
+                                    </div>
+                                    <ul class="achievements">
+                                        <li>
+                                            <i class="fas fa-chalkboard-teacher"></i>
+                                            Automated product onboarding workflows using Python scripts and REST APIs, reducing manual effort by 60%.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-users"></i>
+                                            Improved CRM data integrity by streamlining data flows between product databases and Salesforce.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-laptop-code"></i>
+                                            Created interactive programming exercises to reinforce learning objectives.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-graduation-cap"></i>
+                                            Mentored students on academic and career paths in computer science.
+                                        </li>
+                                    </ul>
+                                    <div class="impact-metrics">
+                                        <div class="metric">
+                                            <span class="metric-number">60%</span>
+                                            <span class="metric-label">Manual Effort Saved</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-number">100%</span>
+                                            <span class="metric-label">CRM Data Integrity</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-number">3</span>
+                                            <span class="metric-label">Systems Integrated</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-company="coder">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="card-header">
+                                    <div class="company-info">
+                                        <h3>Coding Instructor</h3>
+                                        <h4>theCoderSchool</h4>
+                                        <span class="duration">Nov 2024 - May 2025</span>
+                                    </div>
+                                    <div class="company-logo">
+                                        <i class="fas fa-laptop-code"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Java</span>
+                                        <span class="tech-tag">Unity</span>
+                                        <span class="tech-tag">Web Dev</span>
+                                    </div>
+                                    <ul class="achievements">
+                                        <li>
+                                            <i class="fas fa-child"></i>
+                                            Taught foundational programming concepts in Python, Java, HTML/CSS, and Unity to 50+ students aged 8–16
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-gamepad"></i>
+                                            Adapted curriculum to varied student skill levels, boosting engagement and raising project completion by 40%.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-code"></i>
+                                            Developed custom curriculum tailored to each student's interests and learning style
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-star"></i>
+                                            Recognized for exceptional ability to explain complex concepts in simple terms
+                                        </li>
+                                    </ul>
+                                    <div class="impact-metrics">
+                                        <div class="metric">
+                                            <span class="metric-number">50+</span>
+                                            <span class="metric-label">Students Taught</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-number">40%</span>
+                                            <span class="metric-label">Project Completion ↑</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-number">4</span>
+                                            <span class="metric-label">Technologies</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="timeline-item" data-company="coder">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="card-header">
+                                    <div class="company-info">
+                                        <h3>Computer Science Instructor</h3>
+                                        <h4>Wayne State University</h4>
+                                        <span class="duration">Nov 2024 - May 2025</span>
+                                    </div>
+                                    <div class="company-logo">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">HTML/CSS</span>
+                                    </div>
+                                    <ul class="achievements">
+                                        <li>
+                                            <i class="fas fa-child"></i>
+                                            Taught 200+ students Python and JavaScript through project-based learning during summer engineering camps.                                        </li>
+                                        <li>
+                                            <i class="fas fa-gamepad"></i>
+                                            Led coding projects that boosted Python proficiency from 55% to over 85% in pre/post-assessments.                                        </li>
+                                        <li>
+                                            <i class="fas fa-code"></i>
+                                            Coached a team to develop and successfully implement drone control programs using Python, securing a first-place victory in a competitive programming event.                                        </li>
+                                        <li>
+                                            <i class="fas fa-star"></i>
+                                            Recognized for exceptional ability to explain complex concepts in simple terms
+                                        </li>
+                                    </ul>
+                                    <div class="impact-metrics">
+                                        <div class="metric">
+                                            <span class="metric-number">200+</span>
+                                            <span class="metric-label">Students Taught</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-number">85%</span>
+                                            <span class="metric-label">Python Proficiency ↑</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-number">1st</span>
+                                            <span class="metric-label">Place Programming</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-end">};</div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects Gallery</h2>
+            </div>
+            <div class="projects-content">
+                <div class="project-container">
+                    <!-- Mood Map Project -->
+                    <div class="project-card" data-category="web ai">
+                        <div class="project-header">
+                            <div class="project-title">
+                                <h3>Mood Map</h3>
+                                <div class="project-status">
+                                    <span class="status-dot active"></span>
+                                    <span>Featured</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mo-muneeb123/mhacksProject" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <img src="Images/pin.jpg" alt="Mood Map" class="project-image" style="width: 100%; height: 180px; object-fit: cover; object-position: center 35%;">
+                            <div class="project-overlay">
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Flask</span>
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Leaflet.js</span>
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p><strong>Sep 2024 – Nov 2024</strong><br>
+                            Interactive mood heatmap for the U.S. using Flask, React, and Leaflet.js. Users anonymously submit their mood, which is visualized in real time on a map. Optimized for speed and privacy.<br>
+                            </p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">1,200+</span>
+                                    <span class="stat-label">Moods Tracked</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">50ms</span>
+                                    <span class="stat-label">API Response</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">100%</span>
+                                    <span class="stat-label">Anonymous</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Price Tracker Project -->
+                    <div class="project-card" data-category="web api">
+                        <div class="project-header">
+                            <div class="project-title">
+                                <h3>Price Tracker</h3>
+                                <div class="project-status">
+                                    <span class="status-dot active"></span>
+                                    <span>Featured</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mo-muneeb123/price-tracker" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <img src="Images/pricetracker.png" alt="Price Tracker" class="project-image">
+                            <div class="project-overlay">
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">BeautifulSoup</span>
+                                    <span class="tech-tag">Smtplib</span>
+                                    <span class="tech-tag">Web Scraping</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p><strong>June 2024 - July 2024</strong><br>
+                            Python-based price tracker using BeautifulSoup for dynamic web scraping and real-time email alerts. Automated email system with smtplib for 10+ users.</p>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">10+</span>
+                                    <span class="stat-label">Users</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">24/7</span>
+                                    <span class="stat-label">Monitoring</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Auto</span>
+                                    <span class="stat-label">Alerts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wordle Game Project -->
+                    <div class="project-card" data-category="game web">
+                        <div class="project-header">
+                            <div class="project-title">
+                                <h3>Wordle Clone</h3>
+                                <div class="project-status">
+                                    <span class="status-dot active"></span>
+                                    <span>Featured</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mo-muneeb123/Wordle-Clone" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <img src="Images/wordle.png" alt="Wordle Game" class="project-image">
+                            <div class="project-overlay">
+                                <div class="tech-stack">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">PWA</span>
+                                </div>
+                            </div>
+                        </div>
+        <div class="project-content">
+            <p><strong>Jan 2024 – Mar 2024</strong><br>
+            Classic Wordle game clone: guess the 5-letter word in 6 tries with color feedback and smooth animations.            </p>
+            <div class="project-stats">
+                <div class="stat">
+                    <span class="stat-value">100+</span>
+                    <span class="stat-label">Games Played</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">15+</span>
+                    <span class="stat-label">Users</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">4.5</span>
+                    <span class="stat-label">App Rating</span>
+                </div>
+            </div>
+                        </div>
+                    </div>
+
+                    <!-- Math Mania App -->
+                    <div class="project-card" data-category="mobile ai">
+                        <div class="project-header">
+                            <div class="project-title">
+                                <h3>Math Mania</h3>
+                                <div class="project-status">
+                                    <span class="status-dot development"></span>
+                                    <span>Beta</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mo-muneeb123/Math-Mania" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <img src="Images/quiz.png" alt="Math Mania" class="project-image">
+                            <div class="project-overlay">
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Socket.io</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+        <div class="project-content">
+            <p><strong>Feb 2024 – May 2024</strong><br>
+            Python math quiz game with random questions, two difficulty levels, and instant feedback. Built for practice and learning.
+            </p>
+            <div class="project-stats">
+                <div class="stat">
+                    <span class="stat-value">200+</span>
+                    <span class="stat-label">Questions</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">10+</span>
+                    <span class="stat-label">Users</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">Solo</span>
+                    <span class="stat-label">Play</span>
+                </div>
+            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solar Quest -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-header">
+                            <div class="project-title">
+                                <h3>Solar Quest</h3>
+                                <div class="project-status">
+                                    <span class="status-dot active"></span>
+                                    <span>Educational</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mo-muneeb123/Star-Quest" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <img src="Images/solar.jpeg" alt="Solar Quest" class="project-image">
+                            <div class="project-overlay">
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Three.js</span>
+                                    <span class="tech-tag">WebGL</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Physics</span>
+                                </div>
+                            </div>
+                        </div>
+        <div class="project-content">
+            <p><strong>Oct 2023 – Dec 2023</strong><br>
+            Interactive C++ console app teaching astronomy with space facts and a quiz.<br>
+            Features score tracking and random feedback for learning.
+            </p>
+            <div class="project-stats">
+                <div class="stat">
+                    <span class="stat-value">15+</span>
+                    <span class="stat-label">Space Facts</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">50+</span>
+                    <span class="stat-label">Questions</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">Score</span>
+                    <span class="stat-label">Tracking</span>
+                </div>
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-end">};</div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tech Stack</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid-2x2">
+                    <div class="skills-row">
+                        <div class="skill-category" style="margin-right: 2rem; margin-bottom: 2rem;">
+                            <h3>Languages</h3>
+                            <div class="skill-list">
+                                <div class="skill-item"><span class="skill-name">Python</span></div>
+                                <div class="skill-item"><span class="skill-name">Java</span></div>
+                                <div class="skill-item"><span class="skill-name">C/C++</span></div>
+                                <div class="skill-item"><span class="skill-name">JavaScript</span></div>
+                                <div class="skill-item"><span class="skill-name">TypeScript</span></div>
+                                <div class="skill-item"><span class="skill-name">HTML/CSS</span></div>
+                                <div class="skill-item"><span class="skill-name">Swift</span></div>
+                                <div class="skill-item"><span class="skill-name">SQL (PostgreSQL, SQLite, MySQL)</span></div>
+                                <div class="skill-item"><span class="skill-name">XML</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-category" style="margin-bottom: 2rem;">
+                            <h3>Testing & DevOps</h3>
+                            <div class="skill-list">
+                                <div class="skill-item"><span class="skill-name">REST APIs</span></div>
+                                <div class="skill-item"><span class="skill-name">Agile Development</span></div>
+                                <div class="skill-item"><span class="skill-name">CI/CD</span></div>
+                                <div class="skill-item"><span class="skill-name">Unit Testing</span></div>
+                                <div class="skill-item"><span class="skill-name">Jasmine</span></div>
+                                <div class="skill-item"><span class="skill-name">TestBed</span></div>
+                                <div class="skill-item"><span class="skill-name">Travis CI</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-row">
+                        <div class="skill-category" style="margin-right: 2rem; margin-bottom: 2rem;">
+                            <h3>Frameworks & Libraries</h3>
+                            <div class="skill-list">
+                                <div class="skill-item"><span class="skill-name">Angular</span></div>
+                                <div class="skill-item"><span class="skill-name">React</span></div>
+                                <div class="skill-item"><span class="skill-name">Node.js</span></div>
+                                <div class="skill-item"><span class="skill-name">Flask</span></div>
+                                <div class="skill-item"><span class="skill-name">Django</span></div>
+                                <div class="skill-item"><span class="skill-name">FastAPI</span></div>
+                                <div class="skill-item"><span class="skill-name">Leaflet.js</span></div>
+                                <div class="skill-item"><span class="skill-name">RxJS</span></div>
+                                <div class="skill-item"><span class="skill-name">Bootstrap</span></div>
+                                <div class="skill-item"><span class="skill-name">TailwindCSS</span></div>
+                                <div class="skill-item"><span class="skill-name">Vite</span></div>
+                                <div class="skill-item"><span class="skill-name">OpenAI API</span></div>
+                                <div class="skill-item"><span class="skill-name">MongoDB</span></div>
+                                <div class="skill-item"><span class="skill-name">pandas</span></div>
+                                <div class="skill-item"><span class="skill-name">NumPy</span></div>
+                                <div class="skill-item"><span class="skill-name">TensorFlow</span></div>
+                                <div class="skill-item"><span class="skill-name">PyTorch</span></div>
+                                <div class="skill-item"><span class="skill-name">Scikit-learn</span></div>
+                                <div class="skill-item"><span class="skill-name">CV2</span></div>
+                                <div class="skill-item"><span class="skill-name">Hugging Face</span></div>
+                            </div>
+                        </div>
+                        <div class="skill-category" style="margin-bottom: 2rem;">
+                            <h3>Developer Tools</h3>
+                            <div class="skill-list">
+                                <div class="skill-item"><span class="skill-name">Git</span></div>
+                                <div class="skill-item"><span class="skill-name">GitHub</span></div>
+                                <div class="skill-item"><span class="skill-name">GitHub Copilot</span></div>
+                                <div class="skill-item"><span class="skill-name">VS Code</span></div>
+                                <div class="skill-item"><span class="skill-name">IntelliJ</span></div>
+                                <div class="skill-item"><span class="skill-name">PyCharm</span></div>
+                                <div class="skill-item"><span class="skill-name">Visual Studio</span></div>
+                                <div class="skill-item"><span class="skill-name">Jira</span></div>
+                                <div class="skill-item"><span class="skill-name">Bitbucket</span></div>
+                                <div class="skill-item"><span class="skill-name">Confluence</span></div>
+                                <div class="skill-item"><span class="skill-name">Artifactory</span></div>
+                                <div class="skill-item"><span class="skill-name">Docker</span></div>
+                                <div class="skill-item"><span class="skill-name">Arduino</span></div>
+                                <div class="skill-item"><span class="skill-name">Linux</span></div>
+                                <div class="skill-item"><span class="skill-name">Qt</span></div>
+                                <div class="skill-item"><span class="skill-name">Salesforce</span></div>
+                                <div class="skill-item"><span class="skill-name">Windchill</span></div>
+                                <div class="skill-item"><span class="skill-name">CreoView</span></div>
+                                <div class="skill-item"><span class="skill-name">Excel</span></div>
+                                <div class="skill-item"><span class="skill-name">Google Cloud Platform</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-end">};</div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <div class="contact-boxes contact-2x2">
+                        <a href="https://www.linkedin.com/in/mo-muneeb1/" target="_blank" rel="noopener" class="contact-box linkedin">
+                            <span class="contact-box-icon"><i class="fab fa-linkedin"></i></span>
+                            <span class="contact-box-label">LinkedIn</span>
+                        </a>
+                        <a href="mailto:mmriyan123@gmail.com" class="contact-box email" target="_blank" rel="noopener">
+                            <span class="contact-box-icon"><i class="fas fa-envelope"></i></span>
+                            <span class="contact-box-label">Email</span>
+                        </a>
+                        <a href="https://github.com/Mo-muneeb123" target="_blank" rel="noopener" class="contact-box github">
+                            <span class="contact-box-icon"><i class="fab fa-github"></i></span>
+                            <span class="contact-box-label">GitHub</span>
+                        </a>
+                        <a href="Images/resume.pdf" target="_blank" rel="noopener" class="contact-box resume">
+                            <span class="contact-box-icon"><i class="fas fa-file-alt"></i></span>
+                            <span class="contact-box-label">Resume</span>
+                        </a>
+                    </div>
+                    
+                </div>
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-header">
+                                <h3>Send a Message</h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="form-label">
+                                    <span class="label-text">Name</span>
+                                </label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                                <div class="input-underline"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    <span class="label-text">Email</span>
+                                </label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="your.email@company.com" required>
+                                <div class="input-underline"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="company" class="form-label">
+                                    <span class="label-text">Company</span>
+                                </label>
+                                <input type="text" id="company" name="company" class="form-input" placeholder="Company Name (Optional)">
+                                <div class="input-underline"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">
+                                    <span class="label-text">Message</span>
+                                </label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Let's discuss opportunities, projects, or just say hello!" required></textarea>
+                                <div class="input-underline"></div>
+                            </div>
+                            <button type="submit" class="form-submit">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="section-end">};</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-terminal">
+                        <span>Thank you for visiting!</span>
+                    </div>
+                    <div class="footer-output">
+                        Built with passion and precision | © 2025 Mohammed Muneeb
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-status">
+                        <span class="status-indicator online"></span>
+                        <span>Available for New Grad Opportunities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="portfolio.js"></script>
+    <script src="animated-background.js"></script>
+</body>
+</html>
