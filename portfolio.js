@@ -1,6 +1,4 @@
-// Portfolio JavaScript
 document.addEventListener('DOMContentLoaded', function() {
-    // Hide loading screen
     const loadingScreen = document.getElementById('loadingScreen');
     if (loadingScreen) {
         setTimeout(() => {
@@ -11,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1200);
     }
     
-    // Navigation menu toggle for mobile
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
     
@@ -20,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
             navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
             
-            // Toggle hamburger animation
             if (navToggle.classList.contains('active')) {
                 navToggle.querySelector('span:nth-child(1)').style.transform = 'rotate(-45deg) translate(-5px, 6px)';
                 navToggle.querySelector('span:nth-child(2)').style.opacity = '0';
@@ -33,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Close mobile menu when clicking outside
     document.addEventListener('click', (event) => {
         if (navMenu && navMenu.classList.contains('active')) {
             if (!navMenu.contains(event.target) && !navToggle.contains(event.target)) {
@@ -46,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -56,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.getElementById(targetId);
             
             if (targetElement) {
-                // Close mobile menu if open
                 if (navMenu && navMenu.classList.contains('active')) {
                     navMenu.classList.remove('active');
                     navToggle.classList.remove('active');
@@ -66,14 +59,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 
                 window.scrollTo({
-                    top: targetElement.offsetTop - 80, // Adjust for navbar height
+                    top: targetElement.offsetTop - 80, 
                     behavior: 'smooth'
                 });
             }
         });
     });
     
-    // Theme toggle functionality
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
     
@@ -92,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Check for saved theme preference
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'light') {
             body.classList.remove('dark-mode');
@@ -101,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Add 'scrolled' class to navbar when scrolling
     const navbar = document.getElementById('navbar');
     if (navbar) {
         window.addEventListener('scroll', () => {
@@ -113,11 +103,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Active navigation link based on scroll position
     const sections = document.querySelectorAll('section[id]');
     
     function highlightNavLink() {
-        const scrollPosition = window.scrollY + 100; // Adjust for navbar height
+        const scrollPosition = window.scrollY + 100; 
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
@@ -136,9 +125,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     window.addEventListener('scroll', highlightNavLink);
-    highlightNavLink(); // Call on page load
+    highlightNavLink();
     
-    // Scroll to top button
     const scrollToTopBtn = document.getElementById('scrollToTop');
     
     if (scrollToTopBtn) {
@@ -158,14 +146,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Form submission handling
     const contactForm = document.getElementById('contactForm');
     
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
-            // Simple form validation
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
@@ -175,22 +161,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Here you would typically send the form data to a server
-            // For now, we'll just show a success message
             const formSubmitBtn = contactForm.querySelector('.form-submit');
             const originalBtnText = formSubmitBtn.innerHTML;
             
             formSubmitBtn.innerHTML = '<span class="btn-text">Sending...</span>';
             formSubmitBtn.disabled = true;
             
-            // Simulate sending
             setTimeout(() => {
                 formSubmitBtn.innerHTML = '<span class="btn-text">Message Sent!</span> <span class="btn-icon"><i class="fas fa-check"></i></span>';
                 
-                // Reset form
                 contactForm.reset();
                 
-                // Reset button after delay
                 setTimeout(() => {
                     formSubmitBtn.innerHTML = originalBtnText;
                     formSubmitBtn.disabled = false;
@@ -199,7 +180,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Add animation to elements when they enter viewport
     const animateElements = document.querySelectorAll('.skill-progress, .about-box, .project-card, .experience-card');
     
     const animateOnScroll = new IntersectionObserver((entries) => {
@@ -217,7 +197,6 @@ document.addEventListener('DOMContentLoaded', function() {
         animateOnScroll.observe(element);
     });
     
-    // Initialize skill bars with animation
     const skillBars = document.querySelectorAll('.skill-progress');
     
     const animateSkills = new IntersectionObserver((entries) => {
