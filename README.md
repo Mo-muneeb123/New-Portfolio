@@ -1,5 +1,7 @@
 New Personal Portfolio:
 
+https://momuneebpfolio.netlify.app/
+
 - Personal website and portfolio for Mohammed Muneeb, Software Engineer and CS student
   
 - Showcases experience, education, projects, skills, and contact info in a modern, responsive layout
