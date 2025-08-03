@@ -1,4 +1,3 @@
-/* Uniform width for all skill-category boxes in Tech Stack grid */
 .skill-category-uniform {
     width: 100%;
     max-width: 420px;
@@ -51,7 +50,6 @@
     font-family: 'JetBrains Mono', monospace;
     word-break: break-all;
 }
-/* ...existing code... */
 .contact-list.big-icons {
     display: flex;
     justify-content: center;
@@ -78,7 +76,6 @@
     font-weight: 500;
     letter-spacing: 0.01em;
 }
-/* ===== CSS RESET & BASE STYLES ===== */
 * {
     margin: 0;
     padding: 0;
@@ -98,37 +95,30 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== CSS VARIABLES ===== */
 :root {
-    /* Color Palette */
     --bg-primary: #0f172a;
     --bg-secondary: #1e293b;
     --bg-tertiary: #334155;
     --bg-card: #1e293b;
     --bg-hover: #334155;
     
-    /* Text Colors */
     --text-primary: #f8fafc;
     --text-secondary: #cbd5e1;
     --text-muted: #94a3b8;
     --text-accent: #06b6d4;
     
-    /* Accent Colors */
     --accent-primary: #06b6d4;
     --accent-secondary: #0891b2;
     --accent-tertiary: #0e7490;
     
-    /* Status Colors */
     --success: #4ade80;
     --warning: #fbbf24;
     --error: #f87171;
     
-    /* Gradients */
     --gradient-primary: linear-gradient(135deg, #06b6d4, #0ea5e9);
     --gradient-secondary: linear-gradient(135deg, #0891b2, #0284c7);
     --gradient-accent: linear-gradient(90deg, #06b6d4, #14b8a6);
     
-    /* Borders & Shadows */
     --border-radius-sm: 0.25rem;
     --border-radius-md: 0.5rem;
     --border-radius-lg: 1rem;
@@ -137,7 +127,6 @@ body {
     --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.1);
     
-    /* Spacing */
     --space-xs: 0.25rem;
     --space-sm: 0.5rem;
     --space-md: 1rem;
@@ -146,23 +135,19 @@ body {
     --space-2xl: 3rem;
     --space-3xl: 4rem;
     
-    /* Typography */
     --font-heading: 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
     --font-code: 'JetBrains Mono', monospace;
     
-    /* Animation */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
     
-    /* Layout */
     --header-height: 80px;
     --container-width: 1200px;
     --section-spacing: 6rem;
 }
 
-/* Dark mode adjustments */
 .dark-mode {
     --bg-primary: #0f172a;
     --bg-secondary: #1e293b;
@@ -172,7 +157,6 @@ body {
     --text-secondary: #cbd5e1;
 }
 
-/* Light mode */
 .light-mode {
     --bg-primary: #f8fafc;
     --bg-secondary: #f1f5f9;
@@ -185,7 +169,6 @@ body {
     --border-color: rgba(0, 0, 0, 0.1);
 }
 
-/* ===== TYPOGRAPHY ===== */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 700;
